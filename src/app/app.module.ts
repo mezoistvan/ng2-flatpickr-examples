@@ -4,10 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { Ng2FlatpickrComponent } from 'ng2-flatpickr/ng2-flatpickr';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    Ng2FlatpickrComponent
   ],
   imports: [
     BrowserModule,
