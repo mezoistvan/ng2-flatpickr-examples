@@ -74472,6 +74472,9 @@ let Ng2FlatpickrComponent = Ng2FlatpickrComponent_1 = class Ng2FlatpickrComponen
     registerOnTouched() { }
     ///////////////////////////////////
     ngAfterViewInit() {
+        if (this.config) {
+            Object.assign(this.defaultFlatpickrOptions, this.config);
+        }
         this.flatpickr = this.flatpickrElement.nativeElement.flatpickr(this.defaultFlatpickrOptions);
     }
 };
@@ -74479,6 +74482,10 @@ __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["U" /* ViewChild */])('flatpickr'),
     __metadata("design:type", Object)
 ], Ng2FlatpickrComponent.prototype, "flatpickrElement", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* Input */])(),
+    __metadata("design:type", Object)
+], Ng2FlatpickrComponent.prototype, "config", void 0);
 Ng2FlatpickrComponent = Ng2FlatpickrComponent_1 = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["V" /* Component */])({
         selector: 'ng2-flatpickr',

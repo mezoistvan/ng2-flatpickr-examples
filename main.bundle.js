@@ -53,7 +53,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var AppComponent = (function () {
     function AppComponent() {
-        this.title = 'app works!';
+        this.exampleOptions = {
+            defaultDate: '2017-03-15'
+        };
     }
     AppComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["V" /* Component */])({
@@ -157,7 +159,7 @@ module.exports = module.exports.toString();
 /***/ 462:
 /***/ (function(module, exports) {
 
-module.exports = "<ng2-flatpickr></ng2-flatpickr>"
+module.exports = "<ng2-flatpickr></ng2-flatpickr>\r\nWith custom flatpickr options object:\r\n<ng2-flatpickr [config]=\"exampleOptions\"></ng2-flatpickr>"
 
 /***/ }),
 
