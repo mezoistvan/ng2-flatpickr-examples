@@ -1,6 +1,6 @@
-webpackJsonp([1,4],{
+webpackJsonp([2,4],{
 
-/***/ 291:
+/***/ 404:
 /***/ (function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -9,20 +9,20 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 291;
+webpackEmptyContext.id = 404;
 
 
 /***/ }),
 
-/***/ 292:
+/***/ 405:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(380);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(401);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(402);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(532);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(553);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(554);
 
 
 
@@ -35,7 +35,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dyna
 
 /***/ }),
 
-/***/ 400:
+/***/ 552:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -57,11 +57,14 @@ var AppComponent = (function () {
             defaultDate: '2017-03-15'
         };
     }
+    AppComponent.prototype.soon = function (number) {
+        this.number = number;
+    };
     AppComponent = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["V" /* Component */])({
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["i" /* Component */])({
             selector: 'app-root',
-            template: __webpack_require__(462),
-            styles: [__webpack_require__(457)]
+            template: __webpack_require__(615),
+            styles: [__webpack_require__(610)]
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
@@ -71,16 +74,17 @@ var AppComponent = (function () {
 
 /***/ }),
 
-/***/ 401:
+/***/ 553:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(166);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(250);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(376);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(400);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ng2_flatpickr_ng2_flatpickr__ = __webpack_require__(459);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(190);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_material__ = __webpack_require__(516);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(552);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_ng2_flatpickr_ng2_flatpickr__ = __webpack_require__(612);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -97,22 +101,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */],
-                __WEBPACK_IMPORTED_MODULE_5_ng2_flatpickr_ng2_flatpickr__["a" /* Ng2FlatpickrComponent */]
+                __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */],
+                __WEBPACK_IMPORTED_MODULE_6_ng2_flatpickr_ng2_flatpickr__["a" /* Ng2FlatpickrComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
-                __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* HttpModule */]
+                __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* HttpModule */],
+                __WEBPACK_IMPORTED_MODULE_4__angular_material__["a" /* MaterialModule */]
             ],
             providers: [],
-            bootstrap: [__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */]]
+            bootstrap: [__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]]
         }), 
         __metadata('design:paramtypes', [])
     ], AppModule);
@@ -122,31 +128,27 @@ var AppModule = (function () {
 
 /***/ }),
 
-/***/ 402:
+/***/ 554:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return environment; });
-// The file contents for the current environment will overwrite these during build.
-// The build system defaults to the dev environment which uses `environment.ts`, but if you do
-// `ng build --env=prod` then `environment.prod.ts` will be used instead.
-// The list of which env maps to which file can be found in `.angular-cli.json`.
 var environment = {
-    production: false
+    production: true
 };
 //# sourceMappingURL=environment.js.map
 
 /***/ }),
 
-/***/ 457:
+/***/ 610:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(120)();
+exports = module.exports = __webpack_require__(94)();
 // imports
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".flatpickr-example-card {\r\n    width: 400px;\r\n    margin-bottom: 50px;\r\n}\r\n\r\n.flatpickr-examples {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n        -ms-flex-direction: column;\r\n            flex-direction: column;\r\n    -webkit-box-pack: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n}\r\n\r\n.flatpickr-examples-header {\r\n    margin-bottom: 50px;\r\n}", ""]);
 
 // exports
 
@@ -156,20 +158,20 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 462:
+/***/ 615:
 /***/ (function(module, exports) {
 
-module.exports = "<ng2-flatpickr></ng2-flatpickr>\r\nWith custom flatpickr options object:\r\n<ng2-flatpickr [config]=\"exampleOptions\"></ng2-flatpickr>"
+module.exports = "<div class=\"flatpickr-examples-header\">\r\n    <md-toolbar>\r\n        <span>ng2-flatpickr examples</span>\r\n    </md-toolbar>\r\n</div>\r\n\r\n<div class=\"flatpickr-examples\">\r\n    <md-card class=\"flatpickr-example-card\">\r\n        <md-card-header>\r\n            <md-card-title>Basic example:</md-card-title>\r\n        </md-card-header>\r\n        <md-card-content>\r\n            <ng2-flatpickr></ng2-flatpickr>\r\n        </md-card-content>\r\n        <md-card-actions>\r\n            <button (click)=\"soon(1)\" md-button>PLUNKER</button>\r\n            <button *ngIf=\"number === 1\" md-button>SOON!</button>\r\n        </md-card-actions>\r\n    </md-card>\r\n\r\n    <md-card class=\"flatpickr-example-card\">\r\n        <md-card-header>\r\n            <md-card-title>With custom flatpickr options object:</md-card-title>\r\n        </md-card-header>\r\n        <md-card-content>\r\n            <ng2-flatpickr [config]=\"exampleOptions\"></ng2-flatpickr>\r\n        </md-card-content>\r\n        <md-card-actions>\r\n            <button (click)=\"soon(2)\" md-button>PLUNKER</button>\r\n            <button *ngIf=\"number === 2\" md-button>SOON!</button>\r\n        </md-card-actions>\r\n    </md-card>\r\n\r\n    <md-card class=\"flatpickr-example-card\">\r\n        <md-card-header>\r\n            <md-card-title>Set a placeholder:</md-card-title>\r\n        </md-card-header>\r\n        <md-card-content>\r\n            <ng2-flatpickr placeholder=\"Pick a date!\"></ng2-flatpickr>\r\n        </md-card-content>\r\n        <md-card-actions>\r\n            <button (click)=\"soon(3)\" md-button>PLUNKER</button>\r\n            <button *ngIf=\"number === 3\" md-button>SOON!</button>\r\n        </md-card-actions>\r\n    </md-card>\r\n</div>\r\n"
 
 /***/ }),
 
-/***/ 474:
+/***/ 664:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(292);
+module.exports = __webpack_require__(405);
 
 
 /***/ })
 
-},[474]);
+},[664]);
 //# sourceMappingURL=main.bundle.js.map
