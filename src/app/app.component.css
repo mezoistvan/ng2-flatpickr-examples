@@ -1,0 +1,15 @@
+.flatpickr-example-card {
+    width: 400px;
+    margin-bottom: 50px;
+}
+
+.flatpickr-examples {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flatpickr-examples-header {
+    margin-bottom: 50px;
+}

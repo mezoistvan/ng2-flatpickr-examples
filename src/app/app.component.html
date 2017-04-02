@@ -1,1 +1,86 @@
-<ng2-flatpickr></ng2-flatpickr>
+<div class="flatpickr-examples-header">
+    <md-toolbar>
+        <span>ng2-flatpickr examples</span>
+    </md-toolbar>
+</div>
+
+<div class="flatpickr-examples">
+    <md-card class="flatpickr-example-card">
+        <md-card-header>
+            <md-card-title>Basic example:</md-card-title>
+        </md-card-header>
+        <md-card-content>
+            <ng2-flatpickr></ng2-flatpickr>
+        </md-card-content>
+        <md-card-actions>
+            <button (click)="soon(1)" md-button>PLUNKER</button>
+            <button *ngIf="number === 1" md-button>SOON!</button>
+        </md-card-actions>
+    </md-card>
+
+    <md-card class="flatpickr-example-card">
+        <md-card-header>
+            <md-card-title>With custom flatpickr options object:</md-card-title>
+        </md-card-header>
+        <md-card-content>
+            <ng2-flatpickr [config]="exampleOptions"></ng2-flatpickr>
+        </md-card-content>
+        <md-card-actions>
+            <button (click)="soon(2)" md-button>PLUNKER</button>
+            <button *ngIf="number === 2" md-button>SOON!</button>
+        </md-card-actions>
+    </md-card>
+
+    <md-card class="flatpickr-example-card">
+        <md-card-header>
+            <md-card-title>Set a placeholder:</md-card-title>
+        </md-card-header>
+        <md-card-content>
+            <ng2-flatpickr placeholder="Pick a date!"></ng2-flatpickr>
+        </md-card-content>
+        <md-card-actions>
+            <button (click)="soon(3)" md-button>PLUNKER</button>
+            <button *ngIf="number === 3" md-button>SOON!</button>
+        </md-card-actions>
+    </md-card>
+
+    <md-card class="flatpickr-example-card">
+        <md-card-header>
+            <md-card-title>Datetime picker:</md-card-title>
+        </md-card-header>
+        <md-card-content>
+            <ng2-flatpickr [config]="dateTimeOptions" placeholder="Pick a date!"></ng2-flatpickr>
+        </md-card-content>
+        <md-card-actions>
+            <button (click)="soon(4)" md-button>PLUNKER</button>
+            <button *ngIf="number === 4" md-button>SOON!</button>
+        </md-card-actions>
+    </md-card>
+
+    <md-card class="flatpickr-example-card">
+        <md-card-header>
+            <md-card-title>Date range picker with the weeks shown:</md-card-title>
+        </md-card-header>
+        <md-card-content>
+            <ng2-flatpickr [config]="dateRangeOptions" placeholder="Pick a date!"></ng2-flatpickr>
+        </md-card-content>
+        <md-card-actions>
+            <button (click)="soon(5)" md-button>PLUNKER</button>
+            <button *ngIf="number === 5" md-button>SOON!</button>
+        </md-card-actions>
+    </md-card>
+
+    <md-card class="flatpickr-example-card">
+        <md-card-header>
+            <md-card-title>Basic example in a form:</md-card-title>
+        </md-card-header>
+            <form (ngSubmit)="onSubmit()" [formGroup]="form">
+                <md-card-content>
+                    <ng2-flatpickr formControlName="date"></ng2-flatpickr>
+                </md-card-content>
+                <md-card-actions>
+                    <button type="submit" md-button>Submit and console.log the value</button>
+                </md-card-actions>
+            </form>
+    </md-card>
+</div>

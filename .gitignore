@@ -3,6 +3,7 @@
 # compiled output
 /dist
 /tmp
+/ng2-flatpickr-examples
 
 # dependencies
 /node_modules
