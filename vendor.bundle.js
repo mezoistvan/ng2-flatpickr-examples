@@ -93204,13 +93204,13 @@ let Ng2FlatpickrComponent = Ng2FlatpickrComponent_1 = class Ng2FlatpickrComponen
             Object.assign(this.defaultFlatpickrOptions, this.config);
         }
         this.flatpickr = this.flatpickrElement.nativeElement.flatpickr(this.defaultFlatpickrOptions);
-        if (this.dateToSet) {
-            this.setDateFromInput(this.dateToSet);
+        if (this.setDate) {
+            this.setDateFromInput(this.setDate);
         }
     }
     ngOnChanges(changes) {
-        if (changes.hasOwnProperty('dateToSet') && changes.dateToSet.currentValue) {
-            this.setDateFromInput(changes.dateToSet.currentValue);
+        if (changes.hasOwnProperty('setDate') && changes.setDate.currentValue) {
+            this.setDateFromInput(changes.setDate.currentValue);
         }
     }
 };
@@ -93229,7 +93229,7 @@ __decorate([
 __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["k" /* Input */])(),
     __metadata("design:type", Object)
-], Ng2FlatpickrComponent.prototype, "dateToSet", void 0);
+], Ng2FlatpickrComponent.prototype, "setDate", void 0);
 Ng2FlatpickrComponent = Ng2FlatpickrComponent_1 = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* Component */])({
         selector: 'ng2-flatpickr',
