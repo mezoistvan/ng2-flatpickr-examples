@@ -1,7 +1,5 @@
-language: generic # don't install any environment
+language: node_js
+node_js:
+  - '6'
 
 script: bash ./deploy.sh
-env:
-  global:
-  - ENCRYPTION_LABEL: "<.... encryption label from previous step ....>"
-  - COMMIT_AUTHOR_EMAIL: "mezoistvan1@gmail.com"
