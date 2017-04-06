@@ -72,11 +72,11 @@
 
     <md-card class="flatpickr-example-card">
         <md-card-header>
-            <md-card-title>Basic example in a form:</md-card-title>
+            <md-card-title>Every second a new date is set:</md-card-title>
         </md-card-header>
             <form (ngSubmit)="onSubmit()" [formGroup]="form">
                 <md-card-content>
-                    <ng2-flatpickr formControlName="date"></ng2-flatpickr>
+                    <ng2-flatpickr [setDate]="randomDate" formControlName="date"></ng2-flatpickr>
                 </md-card-content>
                 <md-card-actions>
                     <button type="submit" md-button>Submit and console.log the value</button>

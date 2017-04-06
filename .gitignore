@@ -5,6 +5,7 @@
 /tmp
 /ng2-flatpickr-examples
 /demo
+/out
 
 # dependencies
 /node_modules

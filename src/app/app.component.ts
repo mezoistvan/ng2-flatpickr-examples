@@ -7,7 +7,7 @@ import { FormControl, FormGroup, FormBuilder, Validators } from '@angular/forms'
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   exampleOptions: FlatpickrOptions = {
     defaultDate: '2017-03-15'
   };
@@ -37,5 +37,26 @@ export class AppComponent {
 
   onSubmit() {
     console.log( this.form.value );
+  }
+
+  interval: any;
+  randomDate: Date;
+
+  ngOnInit() {
+    this.initRandomDateToSet();
+  }
+
+  initRandomDateToSet() {
+    if( this.interval ) { 
+      clearInterval( this.interval );
+    }
+    this.interval = setInterval( () => this.doRandomDate( 1000, 2000000000000, 0, 23 ), 1000 );
+  }
+
+  doRandomDate(start, end, startHour, endHour) {
+    var date = new Date(+start + Math.random() * (end - start));
+    var hour = startHour + Math.random() * (endHour - startHour) | 0;
+    date.setHours(hour);
+    this.randomDate = date;
   }
 }
